@@ -16,35 +16,55 @@
       <th>[<a href="https://hackage.haskell.org/package/base/docs/Data-Char.html#t:Char">Data.Char.Char</a>]<br/><a href="https://hackage.haskell.org/package/base/docs/Data-String.html#t:String">Data.String.String</a></th>
       <th><a href="https://hackage.haskell.org/package/text/docs/Data-Text.html#t:Text">Data.Text.Text</a></th>
       <th><a href="https://hackage.haskell.org/package/text/docs/Data-Text-Lazy.html#t:Text">Data.Text.Lazy.Text</a></th>
+      <th><a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#t:ShortText">Data.Text.Short.ShortText</a></th>
       <th>[<a href="https://hackage.haskell.org/package/base/docs/Data-Word.html#t:Word8">Data.Word.Word8</a>]</th>
       <th><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString.html#t:ByteString">Data.ByteString.ByteString</a></th>
       <th><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Lazy.html#t:ByteString">Data.ByteString.Lazy.ByteString</a></th>
+      <th><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Short.html#t:ShortByteString">Data.ByteString.Short.ShortByteString</a></th>
     </tr>
     <tr>
       <th><a href="https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/glasgow_exts.html#overloaded-string-literals">OverloadedStrings</a> literals</th>
       <th class="yes"><a href="https://hackage.haskell.org/package/base/docs/Data-String.html#t:IsString">✓<a></th>
       <th class="yes"><a href="https://hackage.haskell.org/package/text/docs/Data-Text.html#t:IsString">✓</a></th>
       <th class="yes"><a href="https://hackage.haskell.org/package/text/docs/Data-Text-Lazy.html#t:IsString">✓</a></th>
-      <th class="no"><a href="">✗</a></th>
+      <th class="yes"><a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#t:ShortText">✓</a></th>
+      <th class="no">✗</th>
       <th class="yes"><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString.html#t:ByteString">✓</a></th>
       <th class="yes"><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Lazy.html#t:ByteString">✓</a></th>
+      <th class="yes"><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Short.html#t:ShortByteString">✓</a></th>
+    </tr>
+    <tr>
+      <th><a href="https://hackage.haskell.org/package/string-conv">string-conv</a> support</th>
+      <th class="yes">✓</th>
+      <th class="yes">✓</th>
+      <th class="yes">✓</th>
+      <th class="no">✗</th>
+      <th class="no">✗</th>
+      <th class="yes">✓</th>
+      <th class="yes">✓</th>
+      <th class="no">✗</th>
     </tr>
     <tr>
       <th>[<a href="https://hackage.haskell.org/package/base/docs/Data-Char.html#t:Char">Data.Char.Char</a>]<br/><a href="https://hackage.haskell.org/package/base/docs/Data-String.html#t:String">Data.String.String</a></th>
       <td class="id"></td>
       <td><a href="https://hackage.haskell.org/package/text/docs/Data-Text.html#v:unpack">Data.Text.unpack</a></td>
       <td><a href="https://hackage.haskell.org/package/text/docs/Data-Text-Lazy.html#v:unpack">Data.Text.Lazy.unpack</a></td>
+      <td><a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#v:unpack">Data.Text.Short.unpack</a> or <br/>
+          <a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#v:toString">Data.Text.Short.toString</a></td>
       <td></td>
       <td><a href="http://hackage.haskell.org/package/utf8-string/docs/Data-ByteString-UTF8.html#v:toString">Data.ByteString.UTF8.toString</a></td>
       <td><a href="http://hackage.haskell.org/package/utf8-string/docs/Data-ByteString-Lazy-UTF8.html#v:toString">Data.ByteString.Lazy.UTF8.toString</a></td>
+      <td></td>
     </tr>
     <tr>
       <th><a href="https://hackage.haskell.org/package/text/docs/Data-Text.html#t:Text">Data.Text.Text</a></th>
       <td><a href="https://hackage.haskell.org/package/text/docs/Data-Text.html#v:pack">Data.Text.pack</a></td>
       <td class="id"></td>
       <td><a href="https://hackage.haskell.org/package/text/docs/Data-Text-Lazy.html#v:toStrict">Data.Text.Lazy.toStrict</a></td>
+      <td><a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#v:toText">Data.Text.Short.toText</a></td>
       <td></td>
       <td><a href="https://hackage.haskell.org/package/text/docs/Data-Text-Encoding.html#v:decodeUtf8">Data.Text.Encoding.decodeUtf8</a></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -54,35 +74,66 @@
       <td class="id"></td>
       <td></td>
       <td></td>
+      <td></td>
       <td><a href="https://hackage.haskell.org/package/text/docs/Data-Text-Lazy-Encoding.html#v:decodeUtf8">Data.Text.Lazy.Encoding.decodeUtf8</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th><a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#t:ShortText">Data.Text.Short.ShortText</a></th>
+      <td><a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#v:pack">Data.Text.Short.pack</a> or<br/>
+          <a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#v:fromString">Data.Text.Short.fromString</a></td>
+      <td><a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#v:fromText">Data.Text.Short.fromText</a></td>
+      <td></td>
+      <td class="id"></td>
+      <td></td>
+      <td><a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#v:fromByteString">Data.Text.Short.fromByteString</a></td>
+      <td></td>
+      <td><a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#v:fromShortByteString">Data.Text.Short.fromShortByteString</a></td>
     </tr>
     <tr>
       <th>[<a href="https://hackage.haskell.org/package/base/docs/Data-Word.html#t:Word8">Data.Word.Word8</a>]</th>
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
       <td class="id"></td>
       <td><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString.html#v:unpack">Data.ByteString.unpack</a></td>
       <td><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Lazy.html#v:unpack">Data.ByteString.Lazy.unpack</a></td>
+      <td><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Short.html#v:unpack">Data.ByteString.Short.unpack</a></td>
     </tr>
     <tr>
       <th><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString.html#t:ByteString">Data.ByteString.ByteString</a></th>
       <td><a href="http://hackage.haskell.org/package/utf8-string/docs/Data-ByteString-UTF8.html#v:fromString">Data.ByteString.UTF8.fromString</a></td>
       <td><a href="https://hackage.haskell.org/package/text/docs/Data-Text-Encoding.html#v:encodeUtf8">Data.Text.Encoding.encodeUtf8</a></td>
       <td></td>
+      <td><a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#v:toByteString">Data.Text.Short.toByteString</a></td>
       <td><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString.html#v:pack">Data.ByteString.pack</a></td>
       <td class="id"></td>
       <td><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString.html#v:toStrict">Data.Bytestring.toStrict</a> or<br/>
           <a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Lazy.html#v:toStrict">Data.Bytestring.Lazy.toStrict</a></td>
+      <td><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Short.html#v:fromShort">Data.ByteString.Short.fromShort</a></td>
     </tr>
     <tr>
       <th><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Lazy.html#t:ByteString">Data.ByteString.Lazy.ByteString</a></th>
       <td><a href="http://hackage.haskell.org/package/utf8-string/docs/Data-ByteString-Lazy-UTF8.html#v:fromString">Data.ByteString.Lazy.UTF8.fromString</a></td>
       <td></td>
       <td><a href="https://hackage.haskell.org/package/text/docs/Data-Text-Lazy-Encoding.html#v:encodeUtf8">Data.Text.Lazy.Encoding.encodeUtf8</a></td>
+      <td></td>
       <td><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Lazy.html#v:pack">Data.ByteString.Lazy.pack</a></td>
       <td><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString.html#v:fromStrict">Data.Bytestring.fromStrict</a> or<br/>
           <a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Lazy.html#v:fromStrict">Data.Bytestring.Lazy.fromStrict</a></td>
+      <td class="id"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Short.html#t:ShortByteString">Data.ByteString.Short.ShortByteString</a></th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#v:toShortByteString">Data.Text.Short.toShortByteString</a></td>
+      <td><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Short.html#v:pack">Data.ByteString.Short.pack</a></td>
+      <td><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Short.html#v:toShort">Data.ByteString.Short.toShort</a></td>
+      <td></td>
       <td class="id"></td>
     </tr>
   </table>
