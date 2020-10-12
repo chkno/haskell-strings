@@ -7,8 +7,8 @@
       th,td { border: thin solid black; padding: .2em; }
       th { text-align: left; vertical-align: bottom; }
       .id { background-color: #bbb; }
-      .yes { background-color: #dfd; text-align: center; }
-      .no { background-color: #fdd; text-align: center; }
+      .yes { background-color: #dfd; text-align: center; font-weight: bold; }
+      .no { background-color: #fdd; text-align: center; font-weight: bold; }
       .want, .have { border-left: none; border-top: none; }
       .want { border-right: none; }
       .have { text-align: right; }
@@ -33,6 +33,8 @@
       <th><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Lazy.html#t:ByteString">Data.ByteString.Lazy.ByteString</a></th>
       <th><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Short.html#t:ShortByteString">Data.ByteString.Short.ShortByteString</a></th>
       <th><a href="https://hackage.haskell.org/package/memory/docs/Data-ByteArray.html#t:ByteArray">Data.ByteArray.ByteArray</a></th>
+      <th><a href="https://hackage.haskell.org/package/primitive/docs/Data-Primitive-ByteArray.html#t:ByteArray">Data.Primitive.ByteArray.ByteArray</a></th>
+      <th><a href="https://hackage.haskell.org/package/primitive/docs/Data-Primitive-ByteArray.html#t:MutableByteArray">Data.Primitive.ByteArray.MutableByteArray</a></th>
     </tr>
     <tr>
       <th colspan="2"><a href="https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/glasgow_exts.html#overloaded-string-literals">OverloadedStrings</a> literals</th>
@@ -45,6 +47,8 @@
       <th class="yes"><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Lazy.html#t:ByteString">✓</a></th>
       <th class="yes"><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Short.html#t:ShortByteString">✓</a></th>
       <th class="no">✗</th>
+      <th class="no">✗</th>
+      <th class="no">✗</th>
     </tr>
     <tr>
       <th colspan="2"><a href="https://hackage.haskell.org/package/string-conv">string-conv</a> support</th>
@@ -55,6 +59,8 @@
       <th class="no newsectioncolumn">✗</th>
       <th class="yes">✓</th>
       <th class="yes">✓</th>
+      <th class="no">✗</th>
+      <th class="no">✗</th>
       <th class="no">✗</th>
       <th class="no">✗</th>
     </tr>
@@ -74,6 +80,8 @@
       <td><a href="http://hackage.haskell.org/package/utf8-string/docs/Data-ByteString-Lazy-UTF8.html#v:toString">Data.ByteString.Lazy.UTF8.toString</a></td>
       <td></td>
       <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <th colspan="2"><a href="https://hackage.haskell.org/package/text/docs/Data-Text.html#t:Text">Data.Text.Text</a></th>
@@ -83,6 +91,8 @@
       <td><a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#v:toText">Data.Text.Short.toText</a></td>
       <td class="newsectioncolumn"></td>
       <td><a href="https://hackage.haskell.org/package/text/docs/Data-Text-Encoding.html#v:decodeUtf8">Data.Text.Encoding.decodeUtf8</a></td>
+      <td></td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -96,6 +106,8 @@
       <td class="newsectioncolumn"></td>
       <td></td>
       <td><a href="https://hackage.haskell.org/package/text/docs/Data-Text-Lazy-Encoding.html#v:decodeUtf8">Data.Text.Lazy.Encoding.decodeUtf8</a></td>
+      <td></td>
+      <td></td>
       <td></td>
       <td></td>
     </tr>
@@ -112,6 +124,8 @@
       <td></td>
       <td><a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#v:fromShortByteString">Data.Text.Short.fromShortByteString</a></td>
       <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr class="newsectionrow">
       <th colspan="2">[<a href="https://hackage.haskell.org/package/base/docs/Data-Word.html#t:Word8">Data.Word.Word8</a>]<br/>
@@ -125,6 +139,8 @@
       <td><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Lazy.html#v:unpack">Data.ByteString.Lazy.unpack</a></td>
       <td><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Short.html#v:unpack">Data.ByteString.Short.unpack</a></td>
       <td><a href="https://hackage.haskell.org/package/memory/docs/Data-ByteArray.html#v:unpack">Data.ByteArray.unpack</a></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <th colspan="2"><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString.html#t:ByteString">Data.ByteString.ByteString</a></th>
@@ -138,6 +154,8 @@
           <a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Lazy.html#v:toStrict">Data.Bytestring.Lazy.toStrict</a></td>
       <td><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Short.html#v:fromShort">Data.ByteString.Short.fromShort</a></td>
       <td><a href="https://hackage.haskell.org/package/memory/docs/Data-ByteArray.html#v:convert">Data.ByteArray.convert</a></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <th colspan="2"><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Lazy.html#t:ByteString">Data.ByteString.Lazy.ByteString</a></th>
@@ -149,6 +167,8 @@
       <td><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString.html#v:fromStrict">Data.Bytestring.fromStrict</a> or<br/>
           <a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Lazy.html#v:fromStrict">Data.Bytestring.Lazy.fromStrict</a></td>
       <td class="id"><a href="https://hackage.haskell.org/package/base/docs/Prelude.html#v:id">id</a></td>
+      <td></td>
+      <td></td>
       <td></td>
       <td></td>
     </tr>
@@ -163,6 +183,8 @@
       <td></td>
       <td class="id"><a href="https://hackage.haskell.org/package/base/docs/Prelude.html#v:id">id</a></td>
       <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <th colspan="2"><a href="https://hackage.haskell.org/package/memory/docs/Data-ByteArray.html#t:ByteArray">Data.ByteArray.ByteArray</a></th>
@@ -175,8 +197,39 @@
       <td></td>
       <td></td>
       <td class="id"><a href="https://hackage.haskell.org/package/base/docs/Prelude.html#v:id">id</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th colspan="2"><a href="https://hackage.haskell.org/package/primitive/docs/Data-Primitive-ByteArray.html#t:ByteArray">Data.Primitive.ByteArray.ByteArray</a></th>
+      <td class="newsectioncolumn no" title="This will type-check, but will not do what you want! &NewLine;byteArrayFromList &quot;ab&quot; = [97,0,0,0,98,0,0,0]">⚠</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="newsectioncolumn"><a href="https://hackage.haskell.org/package/primitive/docs/Data-Primitive-ByteArray.html#v:byteArrayFromList">Data.Primitive.ByteArray.byteArrayFromList</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="id"><a href="https://hackage.haskell.org/package/base/docs/Prelude.html#v:id">id</a></td>
+      <td><a href="https://hackage.haskell.org/package/primitive/docs/Data-Primitive-ByteArray.html#v:freezeByteArray">Data.Primitive.ByteArray.freezeByteArray</a></td>
+    </tr>
+    <tr>
+      <th colspan="2"><a href="https://hackage.haskell.org/package/primitive/docs/Data-Primitive-ByteArray.html#t:MutableByteArray">Data.Primitive.ByteArray.MutableByteArray</a></th>
+      <td class="newsectioncolumn"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="newsectioncolumn"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><a href="https://hackage.haskell.org/package/primitive/docs/Data-Primitive-ByteArray.html#v:copyByteArray">Data.Primitive.ByteArray.copyByteArray</a></td>
+      <td class="id"><a href="https://hackage.haskell.org/package/base/docs/Prelude.html#v:id">id</a></td>
     </tr>
   </table>
+
   <h2 id="string-aliases">String aliases</h2>
   <p><a href="https://wiki.haskell.org/Programming_guidelines#Types"><em>Programming Guidelines</em> in the Haskell Wiki</a> recommends that one "prefer proper data types over type synonyms" and uses <tt>FilePath</tt>, <tt>String</tt> and <tt>[Char]</tt> as an example of how type aliases cause the pain of unpredictable type names in compiler error messages.  This type has many more names than those three:</p>
   <ul>
