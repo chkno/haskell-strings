@@ -6,10 +6,12 @@
       h2 + table { margin-top: 0.3em; }
       table { border-collapse: collapse; }
       th,td { border: thin solid black; padding: .2em; }
-      th { text-align: left; vertical-align: bottom; }
+      th { vertical-align: bottom; }
+      th:first-child { text-align: left; }
+      td { text-align: center; }
       .id { background-color: #bbb; }
-      .yes { background-color: #dfd; text-align: center; font-weight: bold; }
-      .no { background-color: #fdd; text-align: center; font-weight: bold; }
+      .yes { background-color: #dfd; font-weight: bold; }
+      .no { background-color: #fdd; font-weight: bold; }
       .want, .have { border-left: none; border-top: none; }
       .want { border-right: none; }
       .have { text-align: right; vertical-align: top; }
