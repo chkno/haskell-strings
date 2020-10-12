@@ -368,7 +368,14 @@
   </table>
 
   <h2 id="string-aliases">String aliases</h2>
-  <p><a href="https://wiki.haskell.org/Programming_guidelines#Types"><em>Programming Guidelines</em> in the Haskell Wiki</a> recommends that one "prefer proper data types over type synonyms" and uses <tt>FilePath</tt>, <tt>String</tt> and <tt>[Char]</tt> as an example of how type aliases cause the pain of unpredictable type names in compiler error messages.  This type has many more names than those three:</p>
+  <p>
+    <a href="https://wiki.haskell.org/Programming_guidelines#Types"><em>Programming Guidelines</em> in the Haskell Wiki</a>
+    recommends that one "prefer proper data types over type synonyms" and uses
+    <a href="https://hackage.haskell.org/package/filepath/docs/System-FilePath-Posix.html#t:FilePath">FilePath</a>,
+    <a href="https://hackage.haskell.org/package/base/docs/Data-String.html#t:String">String</a>, and
+    [<a href="https://hackage.haskell.org/package/base/docs/Data-Char.html#t:Char">Char</a>]
+    as an example of how type aliases cause the pain of unpredictable type names in compiler error messages.
+    This type has many more names than those three:</p>
   <ul>
     <li>[<a href="https://hackage.haskell.org/package/base/docs/Data-Char.html#t:Char">Data.Char.Char</a>]</li>
     <li><a href="https://hackage.haskell.org/package/base/docs/Data-String.html#t:String">Data.String.String</a></li>
