@@ -31,6 +31,10 @@
       <th><a href="https://hackage.haskell.org/package/text/docs/Data-Text.html#t:Text">Data.Text.Text</a></th>
       <th><a href="https://hackage.haskell.org/package/text/docs/Data-Text-Lazy.html#t:Text">Data.Text.Lazy.Text</a></th>
       <th><a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#t:ShortText">Data.Text.Short.ShortText</a></th>
+      <th><a href="https://hackage.haskell.org/package/basement/docs/Basement-String.html#t:String">Basement.String.String</a></th>
+      <th><a href="https://hackage.haskell.org/package/basement/docs/Basement-Types-AsciiString.html#t:AsciiString">Basement.Types.AsciiString</a></th>
+      <th><a href="https://hackage.haskell.org/package/basement/docs/Basement-String.html#t:MutableString">Basement.String.MutableString</a></th>
+      <th><a href="https://hackage.haskell.org/package/basement/docs/Basement-String-Builder.html#t:Builder">Basement.String.Builder.Builder</a></th>
       <th class="newsectioncolumn">
         <a href="https://hackage.haskell.org/package/base/docs/Foreign-Ptr.html#t:Ptr">Foreign.Ptr.Ptr</a>&nbsp;<a href="https://hackage.haskell.org/package/base/docs/Foreign-C-Types.html#t:CChar">CChar</a><br/>
         <a href="https://hackage.haskell.org/package/base/docs/Foreign-C-String.html#t:CString">Foreign.C.String.CString</a></th>
@@ -42,6 +46,7 @@
       <th><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Short.html#t:ShortByteString">Data.ByteString.Short.ShortByteString</a></th>
       <th><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Builder.html#t:Builder">Data.ByteString.Builder.Builder</a></th>
       <th><a href="https://hackage.haskell.org/package/memory/docs/Data-ByteArray.html#t:ByteArray">Data.ByteArray.ByteArray</a></th>
+      <th><a href="https://hackage.haskell.org/package/basement/docs/Basement-UArray.html#t:UArray">Basement.UArray.UArray</a>&nbsp;<a href="https://hackage.haskell.org/package/basement/docs/Basement-Compat-Base.html#t:Word8">Word8</a></th>
       <th><a href="https://hackage.haskell.org/package/primitive/docs/Data-Primitive-ByteArray.html#t:ByteArray">Data.Primitive.ByteArray.ByteArray</a></th>
       <th><a href="https://hackage.haskell.org/package/primitive/docs/Data-Primitive-ByteArray.html#t:MutableByteArray">Data.Primitive.ByteArray.MutableByteArray</a></th>
       <th><a href="https://hackage.haskell.org/package/primitive/docs/Data-Primitive-Types.html#t:Ptr">Data.Primitive.Types.Ptr</a>&nbsp;<a href="https://hackage.haskell.org/package/base/docs/Data-Word.html#t:Word8">Word8</a><br/>
@@ -52,6 +57,10 @@
       <th class="yes"><a href="https://hackage.haskell.org/package/text/docs/Data-Text.html#t:IsString">✓</a></th>
       <th class="yes"><a href="https://hackage.haskell.org/package/text/docs/Data-Text-Lazy.html#t:IsString">✓</a></th>
       <th class="yes"><a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#t:ShortText">✓</a></th>
+      <th class="yes"><a href="https://hackage.haskell.org/package/basement/docs/Basement-String.html#t:String">✓</a></th>
+      <th class="yes"><a href="https://hackage.haskell.org/package/basement/docs/Basement-Types-AsciiString.html#t:AsciiString">✓</a></th>
+      <th class="no">✗</th>
+      <th class="no">✗</th>
       <th class="no newsectioncolumn">✗</th>
       <th class="no">✗</th>
       <th class="no newsectioncolumn">✗</th>
@@ -59,6 +68,7 @@
       <th class="caution" title="This will type-check, but only works for ASCII; multi-byte characters are silently truncated to octets!"><a href="https://github.com/haskell/bytestring/issues/140">⚠</a></th>
       <th class="caution" title="This will type-check, but only works for ASCII; multi-byte characters are silently truncated to octets!"><a href="https://github.com/haskell/bytestring/issues/140">⚠</a></th>
       <th class="caution" title="This will type-check, but only works for ASCII; multi-byte characters are silently truncated to octets!"><a href="https://github.com/haskell/bytestring/issues/140">⚠</a></th>
+      <th class="no">✗</th>
       <th class="no">✗</th>
       <th class="no">✗</th>
       <th class="no">✗</th>
@@ -70,10 +80,15 @@
       <th class="yes">✓</th>
       <th class="no">✗</th>
       <th class="no">✗</th>
+      <th class="no">✗</th>
+      <th class="no">✗</th>
+      <th class="no">✗</th>
+      <th class="no">✗</th>
       <th class="no newsectioncolumn">✗</th>
       <th class="no">✗</th>
       <th class="yes newsectioncolumn">✓</th>
       <th class="yes">✓</th>
+      <th class="no">✗</th>
       <th class="no">✗</th>
       <th class="no">✗</th>
       <th class="no">✗</th>
@@ -88,11 +103,16 @@
       <th class="yes">✓</th>
       <th class="yes">✓</th>
       <th class="no">✗</th>
+      <th class="no">✗</th>
+      <th class="no">✗</th>
+      <th class="no">✗</th>
+      <th class="no">✗</th>
       <th class="no newsectioncolumn">✗</th>
       <th class="no">✗</th>
       <th class="no newsectioncolumn">✗</th>
       <th class="yes">✓</th>
       <th class="yes">✓</th>
+      <th class="no">✗</th>
       <th class="no">✗</th>
       <th class="no">✗</th>
       <th class="no">✗</th>
@@ -111,11 +131,16 @@
       <td><a href="https://hackage.haskell.org/package/text/docs/Data-Text-Lazy.html#v:unpack">Data.Text.Lazy.unpack</a></td>
       <td><a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#v:unpack">Data.Text.Short.unpack</a> or <br/>
           <a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#v:toString">Data.Text.Short.toString</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td class="newsectioncolumn"><a href="https://hackage.haskell.org/package/base/docs/Foreign-C-String.html#v:peekCString">Foreign.C.String.peekCString</a></td>
       <td><a href="https://hackage.haskell.org/package/base/docs/Foreign-C-String.html#v:peekCStringLen">Foreign.C.String.peekCStringLen</a></td>
       <td class="newsectioncolumn"></td>
       <td><a href="http://hackage.haskell.org/package/utf8-string/docs/Data-ByteString-UTF8.html#v:toString">Data.ByteString.UTF8.toString</a></td>
       <td><a href="http://hackage.haskell.org/package/utf8-string/docs/Data-ByteString-Lazy-UTF8.html#v:toString">Data.ByteString.Lazy.UTF8.toString</a></td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -129,10 +154,15 @@
       <td class="id"><a href="https://hackage.haskell.org/package/base/docs/Prelude.html#v:id">id</a></td>
       <td><a href="https://hackage.haskell.org/package/text/docs/Data-Text-Lazy.html#v:toStrict">Data.Text.Lazy.toStrict</a></td>
       <td><a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#v:toText">Data.Text.Short.toText</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td class="newsectioncolumn"></td>
       <td></td>
       <td class="newsectioncolumn"></td>
       <td><a href="https://hackage.haskell.org/package/text/docs/Data-Text-Encoding.html#v:decodeUtf8">Data.Text.Encoding.decodeUtf8</a></td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -147,11 +177,16 @@
       <td><a href="https://hackage.haskell.org/package/text/docs/Data-Text-Lazy.html#v:fromStrict">Data.Text.Lazy.fromStrict</a></td>
       <td class="id"><a href="https://hackage.haskell.org/package/base/docs/Prelude.html#v:id">id</a></td>
       <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td class="newsectioncolumn"></td>
       <td></td>
       <td class="newsectioncolumn"></td>
       <td></td>
       <td><a href="https://hackage.haskell.org/package/text/docs/Data-Text-Lazy-Encoding.html#v:decodeUtf8">Data.Text.Lazy.Encoding.decodeUtf8</a></td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -167,12 +202,111 @@
       <td><a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#v:fromText">Data.Text.Short.fromText</a></td>
       <td></td>
       <td class="id"><a href="https://hackage.haskell.org/package/base/docs/Prelude.html#v:id">id</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td class="newsectioncolumn"></td>
       <td></td>
       <td class="newsectioncolumn"></td>
+      <td></td>
       <td><a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#v:fromByteString">Data.Text.Short.fromByteString</a></td>
       <td></td>
       <td><a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#v:fromShortByteString">Data.Text.Short.fromShortByteString</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th colspan="2"><a href="https://hackage.haskell.org/package/basement/docs/Basement-String.html#t:String">Basement.String.String</a></th>
+      <td class="newsectioncolumn"><a href="https://hackage.haskell.org/package/basement/docs/Basement-Compat-Base.html#v:fromString">Basement.Compat.Base.fromString</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="id"><a href="https://hackage.haskell.org/package/base/docs/Prelude.html#v:id">id</a></td>
+      <td><a href="https://hackage.haskell.org/package/basement/docs/Basement-From.html#v:from">Basement.From.from</a></td>
+      <td></td>
+      <td><a href="https://hackage.haskell.org/package/basement/docs/Basement-String-Builder.html#v:run">Basement.String.Builder.run</a></td>
+      <td class="newsectioncolumn"></td>
+      <td></td>
+      <td class="newsectioncolumn"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>
+        <a href="https://hackage.haskell.org/package/basement/docs/Basement-From.html#v:tryFrom">Basement.From.tryFrom</a>&nbsp;or<br/>
+        <a href="https://hackage.haskell.org/package/basement/docs/Basement-String.html#v:fromBytes">Basement.String.fromBytes</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th colspan="2"><a href="https://hackage.haskell.org/package/basement/docs/Basement-Types-AsciiString.html#t:AsciiString">Basement.Types.AsciiString</a></th>
+      <td class="newsectioncolumn"><a href="https://hackage.haskell.org/package/basement/docs/Basement-Compat-Base.html#v:fromString">Basement.Compat.Base.fromString</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="id"><a href="https://hackage.haskell.org/package/base/docs/Prelude.html#v:id">id</a></td>
+      <td></td>
+      <td></td>
+      <td class="newsectioncolumn"></td>
+      <td></td>
+      <td class="newsectioncolumn"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><a href="https://hackage.haskell.org/package/basement/docs/Basement-Types-AsciiString.html#v:fromBytes">Basement.Types.AsciiString.fromBytes</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th colspan="2"><a href="https://hackage.haskell.org/package/basement/docs/Basement-String.html#t:MutableString">Basement.String.MutableString</a></th>
+      <td class="newsectioncolumn"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="id"><a href="https://hackage.haskell.org/package/base/docs/Prelude.html#v:id">id</a></td>
+      <td></td>
+      <td class="newsectioncolumn"></td>
+      <td></td>
+      <td class="newsectioncolumn"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th colspan="2"><a href="https://hackage.haskell.org/package/basement/docs/Basement-String-Builder.html#t:Builder">Basement.String.Builder.Builder</a></th>
+      <td class="newsectioncolumn"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><a href="https://hackage.haskell.org/package/basement/docs/Basement-String-Builder.html#v:emit">Basement.String.Builder.emit</a></td>
+      <td></td>
+      <td></td>
+      <td class="id"><a href="https://hackage.haskell.org/package/base/docs/Prelude.html#v:id">id</a></td>
+      <td class="newsectioncolumn"></td>
+      <td></td>
+      <td class="newsectioncolumn"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -189,9 +323,14 @@
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td class="id newsectioncolumn"><a href="https://hackage.haskell.org/package/base/docs/Prelude.html#v:id">id</a></td>
       <td></td>
       <td class="newsectioncolumn"></td>
+      <td></td>
       <td><a href="http://hackage.haskell.org/package/bytestring/docs/Data-ByteString.html#v:useAsCString">Data.ByteString.useAsCString</a></td>
       <td></td>
       <td><a href="http://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Short.html#v:useAsCString">Data.ByteString.Short.useAsCString</a></td>
@@ -209,6 +348,10 @@
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td class="newsectioncolumn"></td>
       <td class="id"><a href="https://hackage.haskell.org/package/base/docs/Prelude.html#v:id">id</a></td>
       <td class="newsectioncolumn"></td>
@@ -220,11 +363,16 @@
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
     </tr>
     <tr class="newsectionrow">
       <th colspan="2">[<a href="https://hackage.haskell.org/package/base/docs/Data-Word.html#t:Word8">Data.Word.Word8</a>]<br/>
           [<a href="https://hackage.haskell.org/package/Crypto/docs/Codec-Utils.html#t:Octet">Codec.Utils.Octet</a>]</th>
       <td class="newsectioncolumn"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -239,6 +387,7 @@
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
     </tr>
     <tr>
       <th colspan="2"><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString.html#t:ByteString">Data.ByteString.ByteString</a></th>
@@ -246,6 +395,10 @@
       <td><a href="https://hackage.haskell.org/package/text/docs/Data-Text-Encoding.html#v:encodeUtf8">Data.Text.Encoding.encodeUtf8</a></td>
       <td></td>
       <td><a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#v:toByteString">Data.Text.Short.toByteString</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td class="newsectioncolumn"><a href="http://hackage.haskell.org/package/bytestring/docs/Data-ByteString.html#v:packCString">Data.ByteString.packCString</a></td>
       <td><a href="http://hackage.haskell.org/package/bytestring/docs/Data-ByteString.html#v:packCStringLen">Data.ByteString.packCStringLen</a></td>
       <td class="newsectioncolumn"><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString.html#v:pack">Data.ByteString.pack</a></td>
@@ -258,12 +411,17 @@
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
     </tr>
     <tr>
       <th colspan="2"><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Lazy.html#t:ByteString">Data.ByteString.Lazy.ByteString</a></th>
       <td class="newsectioncolumn"><a href="http://hackage.haskell.org/package/utf8-string/docs/Data-ByteString-Lazy-UTF8.html#v:fromString">Data.ByteString.Lazy.UTF8.fromString</a></td>
       <td></td>
       <td><a href="https://hackage.haskell.org/package/text/docs/Data-Text-Lazy-Encoding.html#v:encodeUtf8">Data.Text.Lazy.Encoding.encodeUtf8</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td></td>
       <td class="newsectioncolumn"></td>
       <td></td>
@@ -277,6 +435,7 @@
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
     </tr>
     <tr>
       <th colspan="2"><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Short.html#t:ShortByteString">Data.ByteString.Short.ShortByteString</a></th>
@@ -284,6 +443,10 @@
       <td></td>
       <td></td>
       <td><a href="https://hackage.haskell.org/package/text-short/docs/Data-Text-Short.html#v:toShortByteString">Data.Text.Short.toShortByteString</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td class="newsectioncolumn"><a href="http://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Short.html#v:packCString">Data.ByteString.Short.packCString</a></td>
       <td><a href="http://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Short.html#v:packCStringLen">Data.ByteString.Short.packCStringLen</a></td>
       <td class="newsectioncolumn"><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Short.html#v:pack">Data.ByteString.Short.pack</a></td>
@@ -295,10 +458,15 @@
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
     </tr>
     <tr>
       <th colspan="2"><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Builder.html#t:Builder">Data.ByteString.Builder.Builder</a></th>
       <td class="newsectioncolumn"><a href="https://hackage.haskell.org/package/bytestring/docs/Data-ByteString-Builder.html#v:stringUtf8">Data-ByteString-Builder.stringUtf8</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -313,10 +481,15 @@
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
     </tr>
     <tr>
       <th colspan="2"><a href="https://hackage.haskell.org/package/memory/docs/Data-ByteArray.html#t:ByteArray">Data.ByteArray.ByteArray</a></th>
       <td class="newsectioncolumn"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -331,6 +504,33 @@
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th colspan="2"><a href="https://hackage.haskell.org/package/basement/docs/Basement-UArray.html#t:UArray">Basement.UArray.UArray</a>&nbsp;<a href="https://hackage.haskell.org/package/basement/docs/Basement-Compat-Base.html#t:Word8">Word8</a></th>
+      <td class="newsectioncolumn"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>
+        <a href="https://hackage.haskell.org/package/basement/docs/Basement-From.html#v:from">Basement.From.from</a>&nbsp;or<br/>
+        <a href="https://hackage.haskell.org/package/basement/docs/Basement-String.html#v:toBytes">Basement.String.toBytes</a></td>
+      </td>
+      <td><a href="https://hackage.haskell.org/package/basement/docs/Basement-From.html#v:from">Basement.From.from</a></td>
+      <td></td>
+      <td></td>
+      <td class="newsectioncolumn"></td>
+      <td></td>
+      <td class="newsectioncolumn"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="id"><a href="https://hackage.haskell.org/package/base/docs/Prelude.html#v:id">id</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <th colspan="2"><a href="https://hackage.haskell.org/package/primitive/docs/Data-Primitive-ByteArray.html#t:ByteArray">Data.Primitive.ByteArray.ByteArray</a></th>
@@ -338,9 +538,14 @@
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td class="newsectioncolumn"></td>
       <td></td>
       <td class="newsectioncolumn"><a href="https://hackage.haskell.org/package/primitive/docs/Data-Primitive-ByteArray.html#v:byteArrayFromList">Data.Primitive.ByteArray.byteArrayFromList</a></td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -356,9 +561,14 @@
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td class="newsectioncolumn"></td>
       <td></td>
       <td class="newsectioncolumn"></td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -374,9 +584,14 @@
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td class="newsectioncolumn"></td>
       <td></td>
       <td class="newsectioncolumn"></td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -455,6 +670,13 @@
       <th><a href="https://hackage.haskell.org/package/string-conv">string-conv</a></th>
       <th><a href="https://hackage.haskell.org/package/str">str</a></th>
       <th>Note</th>
+    </tr>
+    <tr>
+      <th><a href="https://hackage.haskell.org/package/basement/docs/Basement-Types-AsciiString.html#t:MutableAsciiString">Basement.Types.AsciiString.mutableAsciiString</a></th>
+      <th class="no">✗</th>
+      <th class="no">✗</th>
+      <th class="no">✗</th>
+      <td></td>
     </tr>
     <tr>
       <th><a href="https://hackage.haskell.org/package/containers-0.6.4.1/docs/Data-Sequence.html#t:Seq">Data.Sequence.Seq</a>&nbsp;<a href="https://hackage.haskell.org/package/base/docs/Data-Char.html#t:Char">Char</a></th>
